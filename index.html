@@ -25,7 +25,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
-  <title>Medic | Medical HTML Template</title>
+  <title>MindTree | LeadIt</title>
 
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +36,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <!-- Slick Carousel -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
@@ -211,47 +212,40 @@ FACEBOOK: https://www.facebook.com/themefisher
 ==================================-->
 <div class="hero-slider">
   <!-- Slider Item -->
-  <div class="slider-item slide1" style="background-image:url(images/slider/slider-bg-1.jpg)">
+  
+  <!-- Slider Item -->
+  <div class="slider-item" style="background-image:url(images/nature3.jpg);">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <!-- Slide Content Start -->
-          <div class="content style text-center">
-            <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">Our Best Surgeons</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt animi sequi ratione quod at earum. <br> Quis quos officiis numquam!</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">explore</a>
+        <div class="content text-center style row" >
+            
+          <div  data-animation-in="slideInLeft" class="col-md-6" id="icon-container1" style="width:100%;margin-top: -20px;" ></div>
+          <div class="content style text-center col-md-6"  >
+            <br><br><br>
+          <h2 class="text-white" data-animation-in="slideInRight">We Care About Your Health</h2>
+          <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
           </div>
-          <!-- Slide Content End -->
         </div>
       </div>
     </div>
   </div>
   <!-- Slider Item -->
-  <div class="slider-item" style="background-image:url(images/slider/slider-bg-2.jpg);">
+  <div class="slider-item" style="background-image:url(images/nature4.jpg)">
     <div class="container">
       <div class="row">
+        
         <div class="col-12">
-          <!-- Slide Content Start-->
-          <div class="content style text-center">
+          
+          <div class="content text-center style row" >
+            
+            <div  data-animation-in="slideInLeft" class="col-md-6" id="icon-container" style="width:100%;margin-top: -20px;" ></div>
+            <div class="content style text-center col-md-6"  >
+              <br><br><br>
             <h2 class="text-white" data-animation-in="slideInRight">We Care About Your Health</h2>
             <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
-          </div>
-          <!-- Slide Content End-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Slider Item -->
-  <div class="slider-item" style="background-image:url(images/slider/slider-bg-3.jpg)">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Slide Content Start -->
-          <div class="content text-center style">
-            <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Best Medical Services</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt, <br>eius pariatur minus itaque nostrum.</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">shop now</a>
+            </div>
           </div>
           <!-- Slide Content End -->
         </div>
@@ -1181,6 +1175,35 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!-- script js -->
 <script src="js/script.js"></script>
+
+<script>
+  let iconMenu = document.querySelector('#icon-container');
+  let animationMenu = bodymovin.loadAnimation({
+                  container: iconMenu,
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: "images/101831-mental-therapy.json",
+                 
+  
+              }
+  
+          );
+
+          let iconMenu1 = document.querySelector('#icon-container1');
+          let animationMenu1 = bodymovin.loadAnimation({
+                  container: iconMenu1,
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: "images/38315-speech-therapy.json",
+                 
+  
+              }
+  
+          );
+  
+  </script>
 </body>
 
 </html>

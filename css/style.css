@@ -557,10 +557,10 @@ button:focus {
 }
 
 .hero-slider {
-  height: auto;
+  height: 80vh;
 }
 .hero-slider .slider-item {
-  height: auto;
+  height: 70vh;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -634,6 +634,7 @@ button:focus {
 }
 .hero-slider .slick-dots {
   bottom: 20px;
+  display: none;
 }
 .hero-slider .slick-dots li {
   margin: 0 3px;

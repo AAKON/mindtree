@@ -619,6 +619,9 @@ button:focus {
 }
 .hero-slider .content .btn-white {
   background: transparent;
+  width: auto;
+
+  margin: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
